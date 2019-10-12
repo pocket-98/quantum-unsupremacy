@@ -1,0 +1,2 @@
+ * getting mouse to properly draw on canvas
+   * solved by doing something
