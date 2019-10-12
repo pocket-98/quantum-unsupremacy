@@ -1,0 +1,3 @@
+ * (train.py) use MNIST with CNN in tensorflow to train recognizing digits
+ * (model.dat) save the model offline
+ * (predict.py) script to take an image and predict the digit
