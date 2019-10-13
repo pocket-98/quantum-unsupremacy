@@ -6,12 +6,10 @@ from keras.models import Sequential
 from keras.layers import Dense
 from keras.layers import Dropout
 from keras.layers.convolutional import MaxPooling2D
-
 from keras.utils import np_utils
 from keras.layers.convolutional import Conv2D
 
 (X_train,Y_train),(X_test,Y_test)= mnist.load_data()
-print(X_train.shape[0])
 
 X_train=X_train.reshape(X_train.shape[0],28,28,1)
 X_train.shape
@@ -19,7 +17,6 @@ Y_train = np_utils.to_categorical(Y_train)
 Y_test = np_utils.to_categorical(Y_test)
 Y_test.shape[1]
 sizeDim=X_train[0].shape[0]*X_train[0].shape[1]
-print(sizeDim)
 X_train=X_train/255
 Y_train=Y_train/255
 
