@@ -2,16 +2,46 @@ body {
 	background-color: #EEFFFF;
 }
 
-#page {
-	margin: 30px auto;
-	background-color: #F7FFFF;
-	text-align: center;
-	box-shadow: 3px 5px 20px #AAAAAA;
+.box1,.box2,.box3{
+	background: rgba(201, 88, 144, 0.541);
+	min-height: 700px;
+}
+
+.resultBox{
+	position: relative;
+	left: 10%;
+	background: teal;
+	width: 80%;
+	min-height: 100px;
 }
 
 h1 {
 	margin: 30px auto;
 	color: #555577;
+	text-align: center;
+}
+
+.footcontainer{
+    position: relative;
+    background-color: #7DA3A1;
+    width: 100%;
+    height: 150px;
+    margin-top: 40px;
+    bottom: 0%;
+}
+
+#options{
+    position: absolute;
+    text-align: center;
+    width: 100%;    
+    margin-top: 2%;
+}
+
+.foot{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
 }
 
 .button {
