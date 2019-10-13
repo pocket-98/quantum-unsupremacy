@@ -8,8 +8,8 @@ $(document).ready(function() {
 function decbin(x, y) {
     var first = Number(x).toString(2), second = Number(y).toString(2);
 
-    first = "0000".substr(first.length) + first;
-    second = "0000".substr(second.length) + second;
+    first = "00000".substr(first.length) + first;
+    second = "00000".substr(second.length) + second;
     return classicAdder(first, second);
 }
 
@@ -56,11 +56,11 @@ function complexAdd(x, y, z) {
     };
 }
 
-// adds any 4 bit binary values
+// adds any 5 bit binary values (with leading 0)
 function classicAdder(x, y) {
     console.log(x);
   	console.log(y);
-    var inX = Array(4), inY = Array(4), out = Array(4), i = 4, pass;
+    var inX = Array(5), inY = Array(5), out = Array(5), i = 5, pass;
 
     for(i = 0; i < x.length; i++) {
         inX[i] = x[i] != 1 ? 0 : 1;
@@ -68,7 +68,9 @@ function classicAdder(x, y) {
     }
 
     // connect the bit blocks
-    pass = simpleAdd(inX[3], inY[3]);
+    pass = simpleAdd(inX[4], inY[4]);
+    out[4] = pass.sum;
+    pass = complexAdd(inX[3], inY[3], pass.carryOver);
     out[3] = pass.sum;
     pass = complexAdd(inX[2], inY[2], pass.carryOver);
     out[2] = pass.sum;
@@ -76,12 +78,6 @@ function classicAdder(x, y) {
     out[1] = pass.sum;
     pass = complexAdd(inX[0], inY[0], pass.carryOver);
     out[0] = pass.sum;
-
-    // if result needs a fifth bit will add it
-    if(pass.carryOver){
-    	out = out.join('');
-    	return out = "1" + out;
-    }
 
     return out.join('');
 }
