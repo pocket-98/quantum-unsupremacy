@@ -33,7 +33,7 @@ function addclick2(x, y, dragging)
 $('#submit').click(function(e) {
   var img1 = $('.ncanvas')[0].toDataURL('image/png');
   var img2 = $('.ncanvas')[1].toDataURL('image/png');
-  console.log(img);
+  console.log(img1);
 });
 
 $('#canvas1').mousedown(function(e) {

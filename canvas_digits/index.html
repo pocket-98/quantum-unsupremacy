@@ -12,23 +12,25 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <div class="container" style="margin: 0px auto">
-      <div class="col-xs-0 col-sm-2 col-lg-3"></div>
-      <div id="page" class="col-xs-12 col-sm-8 col-lg-6">
-        <div class="row">
-          <div class="col-xs-6">
-            <canvas class="ncanvas" id="canvas1" width="400" height="400"></canvas>
+    <div class="row">
+      <div class="container-fluid" style="margin: 0px auto">
+        <div class="page" class="col-xs-12">
+          <div class="row">
+            <div class="col-xs-6">
+              <canvas class="ncanvas" id="canvas1" width="400" height="400"></canvas>
+            </div>
+            <div class="col-xs-6">
+              <canvas class="ncanvas" id="canvas2" width="400" height="400"></canvas>
+            </div>
           </div>
-          <div class="col-xs-6">
-            <canvas class="ncanvas" id="canvas2" width="400" height="400"></canvas>
-          </div>
-        </div>
-        <h2 id="title">Beat the Quantum Computer!</h2>
-        <p id="desc">Draw your number and press submit</p>
+          <h2 id="title">Beat the Quantum Computer!</h2>
+          <p id="desc">Draw your number and press submit</p>
           <div id="submit" class="button">
             <div>submit</div>
           </div>
-          <pre style="text-align:left"><code class="JavaScript">// compares two bits first, then factors in any carrys
+        </div>
+        <div class="col-xs-0" class="page">
+<pre style="text-align:left"><code class="JavaScript">// compares two bits first, then factors in any carrys
 function complexAdd(x, y, z) {
     var val1 = simpleAdd(x, y);
     var val2 = simpleAdd(val1.sum, z);
@@ -36,8 +38,18 @@ function complexAdd(x, y, z) {
         carryOver: or(val1.carryOver, val2.carryOver), sum: val2.sum
     };
 }</code></pre>
+        </div>
+        <div class="col-xs-0" class="page">
+<pre style="text-align:left"><code class="JavaScript">// compares two bits first, then factors in any carrys
+function complexAdd(x, y, z) {
+    var val1 = simpleAdd(x, y);
+    var val2 = simpleAdd(val1.sum, z);
+    return {
+        carryOver: or(val1.carryOver, val2.carryOver), sum: val2.sum
+    };
+}</code></pre>
+        </div>
       </div>
-      <div class="col-xs-0 col-sm-2 col-lg-3"></div>
     </div>
     <script>hljs.initHighlightingOnLoad();</script>
   </body>
