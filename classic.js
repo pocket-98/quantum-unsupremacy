@@ -1,10 +1,3 @@
-$(document).ready(function() {
-    setTimeout(function() {
-        var ans = decbin(a, b);
-        $("#classic").html(ans);
-    }, 1000);
-});
-
 function decbin(x, y) {
     var first = Number(x).toString(2), second = Number(y).toString(2);
 
