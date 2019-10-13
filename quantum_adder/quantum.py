@@ -3,12 +3,9 @@
 import time
 import sys
 import numpy as np
-import matplotlib.pyplot as plt
-get_ipython().run_line_magic('matplotlib', 'inline')
 
 from qiskit import QuantumCircuit, QuantumRegister, ClassicalRegister
 from qiskit import IBMQ, Aer, execute
-from qiskit.providers.jobstatus import JobStatus
 from qiskit.providers.aer import noise
 
 # get backends
