@@ -32,7 +32,7 @@ model.add(Dense(10, activation='softmax'))
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 hist=model.fit(X_train,Y_train,epochs=3,batch_size=300,verbose=2)
 model.evaluate(X_train,Y_train,verbose=2)
-model.save("Try.h5")
+model.save("network.h5")
 accuracy=hist.history['acc']
 epoch=range(len(accuracy))
 
