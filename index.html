@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, user-scalable=no"/>
     <title>Quantum Unsupremacy</title>
     <script type="text/javascript" src="jquery.min.js"></script>
-    <script type="text/javascript" defer src="script.js"></script>
+    <script type="text/javascript" defer src="canvas_handler.js"></script>
+    <script type="text/javascript" defer src="classic.js"></script>
     <script src="highlight.pack.js"></script>
     <link rel="stylesheet" href="obsidian.css">
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
+    <script>
+      var a = 2;
+      var b = 2;
+    </script>
     <div class="container-fluid" style="margin: 0px auto">
       <div class="row">
         <div class="col-xs-2 col-md-3"></div>
@@ -38,6 +43,10 @@ function complexAdd(x, y, z) {
         carryOver: or(val1.carryOver, val2.carryOver), sum: val2.sum
     };
 }</code></pre>
+            <hr/>
+            <div id="classic">
+              <div class="loader"></div>
+            </div>
           </div>
         </div>
 
