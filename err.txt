@@ -25,10 +25,10 @@ Using TensorFlow backend.
   np_resource = np.dtype([("resource", np.ubyte, 1)])
 WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:4070: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
 
-2019-10-13 14:35:58.204794: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
-2019-10-13 14:35:58.209192: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2400060000 Hz
-2019-10-13 14:35:58.209318: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x43d7430 executing computations on platform Host. Devices:
-2019-10-13 14:35:58.209344: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
-2019-10-13 14:35:58.226017: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+2019-10-13 14:54:54.137397: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-10-13 14:54:54.141912: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2400060000 Hz
+2019-10-13 14:54:54.142040: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5d3daa0 executing computations on platform Host. Devices:
+2019-10-13 14:54:54.142066: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2019-10-13 14:54:54.159002: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
 WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:422: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
 

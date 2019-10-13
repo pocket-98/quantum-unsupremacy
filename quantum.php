@@ -11,14 +11,9 @@ function post_get($var) {
     }
 }
 
-$leftimg = explode(";", post_get("leftimg"))[1];
-$rightimg = explode(";", post_get("rightimg"))[1];
+$a = post_get("a");
+$b = post_get("b");
 
-//$digit1 = shell_exec("python3 cnn_digits/predict_fake.py '$leftimg'");
-$digit1 = shell_exec("python3 cnn_digits/predict.py '$leftimg' '$rightimg' 2> err.txt");
-
-//$digit2 = shell_exec("python3 cnn_digits/predict_fake.py '$rightimg'");
-//$digit2 = shell_exec("python3 cnn_digits/predict.py '$rightimg' 2> err2.txt");
-
-print_r($digit1);
+//echo(shell_exec("python3 quantum_adder/quantum_fake.py '$a' '$b'"));
+echo(shell_exec("python3 quantum_adder/quantum.py '$a' '$b'"));
 ?>
