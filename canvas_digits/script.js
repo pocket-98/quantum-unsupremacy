@@ -22,6 +22,11 @@ function addclick(x, y, dragging)
   clickDrag.push(dragging);
 }
 
+$('#submit').click(function(e) {
+  var img = $('#canvas')[0].toDataURL('image/png');
+  console.log(img);
+});
+
 $('#canvas').mousedown(function(e) {
   var mousex = getMousePos(this, e).x
   var mousey = getMousePos(this, e).y
