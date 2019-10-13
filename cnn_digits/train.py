@@ -32,14 +32,10 @@ model.add(Dense(10, activation='softmax'))
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 hist=model.fit(X_train,Y_train,epochs=3,batch_size=300,verbose=2)
 model.evaluate(X_train,Y_train,verbose=2)
-model_trained = model.to_json()
-with open("model_trained.json", "w") as json_file:
-    json_file.write(model_trained)
-model.save_weights("model_trained.h5")
 model.save("Try.h5")
 accuracy=hist.history['acc']
-x=range(len(accuracy))
+epoch=range(len(accuracy))
 
-data=np.array([x,accuracy])
+data=np.array([epoch,accuracy])
 np.savetxt("data.csv",data,delimiter=",")
 
