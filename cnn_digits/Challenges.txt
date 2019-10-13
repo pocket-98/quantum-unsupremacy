@@ -1,0 +1,5 @@
+*Problem Authenticating MNIST server
+ *Solved by installing certificates to computer
+*Wouldn't run locally on mac
+ *Used private server running linux
+
