@@ -16,7 +16,9 @@ pix = np.array(im.getdata()).reshape(im.size[1], im.size[0], 4)
 #Creates an image that, instead of using Red Green Blue only takes in one value
 newimg = (pix[:,:,0] + pix[:,:,1] + pix[:,:,2] + pix[:,:,3])
 maximg = np.max(newimg)
-if np.abs(maximg) > 0.1:
+if np.abs(maximg) <= 5:
+  print(str(0))
+  sys.exit(0)
   normimg = newimg.astype("float32") / maximg
 
 #set_orig=np.zeros((28,28))
