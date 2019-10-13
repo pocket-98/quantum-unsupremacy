@@ -36,6 +36,7 @@ model_trained = model.to_json()
 with open("model_trained.json", "w") as json_file:
     json_file.write(model_trained)
 model.save_weights("model_trained.h5")
+model.save("Try.h5")
 accuracy=hist.history['acc']
 x=range(len(accuracy))
 
