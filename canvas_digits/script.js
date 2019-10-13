@@ -91,7 +91,7 @@ function redraw(){
   
   context1.strokeStyle = "#df4b26";
   context1.lineJoin = "round";
-  context1.lineWidth = 5;
+  context1.lineWidth = 20;
   for(var i=0; i < clickX1.length; i++) {		
     context1.beginPath();
     if(clickDrag1[i] && i){
@@ -107,7 +107,7 @@ function redraw(){
   
   context2.strokeStyle = "#df4b26";
   context2.lineJoin = "round";
-  context2.lineWidth = 5;
+  context2.lineWidth = 20;
   for(var i=0; i < clickX2.length; i++) {		
     context2.beginPath();
     if(clickDrag2[i] && i){
