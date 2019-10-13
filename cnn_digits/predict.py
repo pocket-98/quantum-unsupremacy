@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from PIL import Image
 from keras.models import load_model
 from io import BytesIO
