@@ -30,12 +30,6 @@ function addclick2(x, y, dragging)
   clickDrag2.push(dragging);
 }
 
-$('#submit').click(function(e) {
-  var img1 = $('.ncanvas')[0].toDataURL('image/png');
-  var img2 = $('.ncanvas')[1].toDataURL('image/png');
-  console.log(img1);
-});
-
 $('#canvas1').mousedown(function(e) {
   var mousex = getMousePos(this, e).x
   var mousey = getMousePos(this, e).y
@@ -88,11 +82,11 @@ var clickDrag2 = new Array();
 
 function redraw(){
   context1.clearRect(0, 0, context1.canvas.width, context1.canvas.height); // Clears the canvas
-  
+
   context1.strokeStyle = "#df4b26";
   context1.lineJoin = "round";
   context1.lineWidth = 20;
-  for(var i=0; i < clickX1.length; i++) {		
+  for(var i=0; i < clickX1.length; i++) {
     context1.beginPath();
     if(clickDrag1[i] && i){
       context1.moveTo(clickX1[i-1], clickY1[i-1]);
@@ -104,11 +98,11 @@ function redraw(){
      context1.stroke();
   }
   context2.clearRect(0, 0, context1.canvas.width, context1.canvas.height); // Clears the canvas
-  
+
   context2.strokeStyle = "#df4b26";
   context2.lineJoin = "round";
   context2.lineWidth = 20;
-  for(var i=0; i < clickX2.length; i++) {		
+  for(var i=0; i < clickX2.length; i++) {
     context2.beginPath();
     if(clickDrag2[i] && i){
       context2.moveTo(clickX2[i-1], clickY2[i-1]);
