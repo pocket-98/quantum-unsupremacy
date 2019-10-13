@@ -10,7 +10,7 @@ body {
 	box-shadow: 3px 5px 20px #AAAAAA;
 }
 
-#canvas {
+.ncanvas {
 	width: 100%;
 	background-color: #FDFFFF;
 	box-shadow: 0px 1px 4px #AAAAAA;
