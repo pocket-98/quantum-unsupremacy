@@ -1,2 +1,2 @@
  * getting mouse to properly draw on canvas
-   * solved by doing something
+   * solved by debugging to figure out where the mouse position was being obtained and then replacing with a function to find absolute position on page
