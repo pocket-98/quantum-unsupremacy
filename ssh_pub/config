@@ -1,6 +1,0 @@
-Host quantum quantumunsupremacy.space
-    HostName 18.217.188.230
-    User ubuntu
-    Port 22
-    IdentityFile ~/.ssh/privkey
-
