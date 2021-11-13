@@ -1,3 +1,0 @@
- * (calculate.py) script that takes 2 four bit inputs and computes the sum
-   using a quantum computer
- * (display.py) script that generates the circuit that will be run
