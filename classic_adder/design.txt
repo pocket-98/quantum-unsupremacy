@@ -1,3 +1,0 @@
- * classic algorithm that mimics doing and and xor gates to do a 4bit adder
- * properly seperate all helper methods out and display just the core code
-   involving gates.
