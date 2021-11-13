@@ -1,2 +1,0 @@
- * make a canvas where you can draw digits and the result can be sent as an
-   image to a remote server with http post requests
